@@ -19,5 +19,5 @@ My goal is to become an experienced professional. My priority is always to study
 2. Incomplete higher education (BNTU)
 3. Stepik (HTML and CSS course, SQL, OOP, Python course for beginners, Python course for professionals)
 ## 6. Language level
-* English: А1
+* English: А2
 * Deutch: A2
