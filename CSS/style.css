@@ -1,0 +1,310 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  position: relative;
+  justify-content: center;
+  line-height: 1.4;
+  background-color: #5f84a2;
+  color: #cadeed;
+}
+
+.show {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  background-image: url('https://i.gifer.com/5WWU.gif');
+}
+
+.cv_header {
+  display: none;
+}
+
+
+
+.list_header {
+  background-color: #194569;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.list_item {
+  margin-left: 30px;
+}
+
+.link_item {
+  color: #91AEC4;
+  border: 1px solid rgb(121, 130, 250);
+  border-radius: 30px;
+  padding: 5px;
+}
+
+.link_item:hover {
+  opacity: 1;
+  animation-name: slide;
+  animation-duration: 0.6s;
+  animation-fill-mode: both;
+}
+
+
+
+@keyframes slide {
+  25% {
+    border-left: none;
+    font-size: 90%;
+  }
+  50% { 
+    border-top: none;
+    font-size: 110%;
+  }
+  75% {
+    border-right: none;
+  }
+  100% {
+    border-bottom: 1px solid rgb(121, 130, 250);
+    font-size: 100%;
+  }
+}
+
+.section_1{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.avatar {
+  border-radius: 100px;
+}
+
+.Name_main {
+  margin-top: 50px;
+  font-size: 40px;
+  color: #B7d0e1;
+}
+
+.Name_main  h1,h2{
+  border-bottom: 3px solid #B7d0e1;
+  border-radius: 10px;
+}
+
+.section_2 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  border-top: 10px solid #194569;
+  border-radius: 20px;
+
+}
+
+.teleg , .mail {
+  color: white;
+}
+
+.section_2 .Contact_info  p::before {
+  content: "❄";
+  padding-right: 5px;
+}
+
+.section_2  h3 {
+  font-size: 30px;
+}
+
+.section_2 > div {
+  border-bottom: 3px solid #194569;
+  border-radius: 10px;
+}
+
+.Contact_info {
+  display: block;
+  width: 40%;
+  height: 300px;
+}
+
+.About_me {
+  display: block;
+  width: 40%;
+  height: 300px;
+}
+
+.section_3 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+.section_3  h3 {
+  font-size: 30px;
+}
+
+
+.section_3 > div {
+  border-bottom: 3px solid #194569;
+  border-radius: 10px;
+}
+
+.Skills {
+  width: 40%;
+  height: 300px;
+}
+
+.Deploying {
+  width: 40%;
+  height: 300px;
+}
+
+.section_3  p::before {
+  content: "❄";
+  padding-right: 5px;
+}
+
+.section_4 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+
+.section_4  h3 {
+  font-size: 30px;
+}
+
+
+.section_4  {
+  border-bottom: 10px solid #194569;
+  border-radius: 20px;
+}
+
+
+
+
+.Language_level {
+  width: 40%;
+  height: 300px;
+}
+
+.section_4  p::before {
+  content: "❄";
+  padding-right: 5px;
+}
+
+.Code {
+  width: 40%;
+  height: 300px;
+}
+
+
+.footer-container {
+  background-color: #194569;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 50px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.rs {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-image: url('../accets/ico/rs_school_js.svg');
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+}
+
+.github_link {
+  color: white;
+}
+
+.no_show {
+  position: relative;
+  display: block;
+  margin: 20px auto;
+  width: 50px;
+  height: 50px;
+  background-image: url('../accets/svg/show.svg');
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-color: #b2d6f3;
+  border-radius: 50%;
+  border: 5px solid #b2d6f3;
+}
+
+.no_show:hover {
+  scale: 1.2;
+}
+
+
+@media (max-width: 740px) {
+  
+  .no_show {
+    display: none;
+  }
+
+  .show {
+    background-image: none;
+  }
+
+  .list_header {
+   display: none;
+  }
+
+  .cv_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+  }
+
+
+
+  .p_cv {
+    color: #B7d0e1;
+    border-bottom: 2px solid #73709f;
+    border-radius: 5px;
+  }
+
+  .header {
+    position: relative;
+    background-color: #194569;
+    min-width: 320px;
+    height: 50px;
+    
+  }
+}
+
+  @media (max-width: 550px) {
+    .section_1 {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .section_2, .section_3, .section_4 {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .section_2 div, .section_3 div, .section_4 div {
+      width: 80%;
+      height: 80%;
+    }
+
+    .Language_level {
+      border-bottom: 3px solid #194569;
+      border-radius: 20px;
+    }
+
+    
+  }
+  

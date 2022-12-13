@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VladiSlawe</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="accets/svg/show.svg" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="cv_header">
+            <p class="p_cv">Curriculum Vitae</p>
+        </div>
+        <nav class="nav">
+            <ul class="list_header">
+                <li class="list_item"><a href="#Contact_h3" class="link_item">Contact info</a></li>
+                <li class="list_item"><a href="#About_me_h3" class="link_item">About me</a></li>
+                <li class="list_item"><a href="#Skills_h3" class="link_item">Skills</a></li>
+                <li class="list_item"><a href="#Deploying_h3" class="link_item">Deploying</a></li>
+                <li class="list_item"><a href="#Language_level_h3" class="link_item">Language level</a></li>
+                <li class="list_item"><a href="#Code" class="link_item">Code</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="show">
+        </div>
+        <div class="no_show" onclick="show()"></div>
+        <section class="section_1">
+                <img src="./accets/img/avatar.jpg" alt="Avatar" class="avatar" height="200" width="200">
+                <div class="Name_main">
+                <h1 class="Name">Vladislawe Vasiliev</h3>
+                <h2 class="Surname">Frontend Devoloper</h3>
+        </section>
+        <section class="section_2">
+            <div class="Contact_info">
+                <h3 class="Contact_h3" id="Contact_h3">Contact info</h3>
+                <p>Location: Belarus, Minsk</p>
+                <p>Phone: +375297556036 (MTS)</p>
+                <p>Telegramm: <a href="#" class="teleg">@Vlad1kun</a></p>
+                <p>Mail: <a href="#" class="mail">viparrow@mail.ru</a></p>
+            </div>
+            <div class="About_me">
+                <h3 class="About_me_h3" id="About_me_h3">About me</h3>
+                <p>My goal is to become an experienced professional. My priority is always to study. My strengths are that I try my best and do not burn out, because I like it. I work as a CNC adjuster. I moonlight as a backend developer. I am happy to learn something new.</p>
+            </div>
+        </section>
+        <section class="section_3">
+            <div class="Skills">
+                <h3 class="Skills_h3" id="Skills_h3">Skills</h3>
+                <p class="skills_item">Python (Django, OOP, SQL, pyTelegramBotAPI)</p>
+                <p class="skills_item">JavaScript (basic)</p>
+                <p class="skills_item">HTML (basic)</p>
+                <p class="skills_item">CSS(Basic)</p>
+            </div>
+            <div class="Deploying">
+                <h3 class="Deploying_h3" id="Deploying_h3">Deploying</h3>
+                <p class="deplouing_item">Specialized Secondary (GSC)</p>
+                <p class="deplouing_item">Incomplete higher education (BNTU)</p>
+                <p class="deplouing_item">Stepik (HTML and CSS course, SQL, OOP, Python course for beginners, Python course for professionals)</p>
+            </div>
+        </section>
+        <section class="section_4">
+            <div class="Language_level">
+                <h3 class="Language_level_h3" id="Language_level_h3">Language level</h3>
+                <p class="language_item">English: A2</p>
+                <p class="language_item">Deutch: A2</p>
+            </div>
+            <div class="Code">
+                <h3 class="Code_h3" id="Code">Code</h3>
+                <div class="Code_item">
+                    <p>if const == 1:</p>
+                    <p>("Hello Python")</p>
+                    <p>elif const == 2:</p>
+                    <p>alert("Hello JS")</p>
+                </div>
+            </div>
+        </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+          <div>© 2022 <a href="https://github.com/vlad1kun" class="github_link">Vlad1kun</a></div>
+          <a href="https://rs.school/js/" class="rs"></a>
+        </div>
+      </footer>
+    </div>
+    <script>
+        function show() {
+            let show = document.querySelector('.show');
+            let no_show_btn = document.querySelector('.no_show');
+            if (show.style.display == 'block') {
+                show.style.display = 'none'
+            } else {
+                show.style.display = 'block'
+            };
+        };
+    </script>
+</body>
+</html>
